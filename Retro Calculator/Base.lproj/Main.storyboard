@@ -273,7 +273,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="outputLabel" destination="r2m-6e-RZ7" id="tWe-Zt-i9q"/>
+                        <outlet property="outputLabel" destination="r2m-6e-RZ7" id="PGP-Cm-uPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
