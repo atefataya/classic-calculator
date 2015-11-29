@@ -47,8 +47,15 @@ class ViewController: UIViewController {
 
     @IBAction func numberPressed(btn: UIButton!){
         playSound()
-        runningNumber += "\(btn.tag)"
-        outputLabel.text = runningNumber
+        if btn.tag < 10 {
+            
+            runningNumber += "\(btn.tag)"
+            outputLabel.text = runningNumber
+            
+        }else {
+            clear()
+        }
+        
     }
     
     @IBAction func onDividePressed(sender: AnyObject) {
@@ -120,6 +127,15 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
+    func clear() {
+        
+        self.outputLabel.text = "0"
+        self.runningNumber = ""
+        self.rightValStr = ""
+        self.leftValStr = ""
+        self.currentOperation = Operation.Empty
+        self.result = ""
+    }
     
 }
 
